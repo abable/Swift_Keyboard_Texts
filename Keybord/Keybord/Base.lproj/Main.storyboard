@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qjn-Od-Ma2">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Responder-->
+        <scene sceneID="MVp-k6-NgR">
+            <objects>
+                <viewController title="First Responder" id="nAd-Vx-0io" customClass="FirstResponderViewController" customModule="ViewCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rPi-gb-WjN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6k4-MD-ikw">
+                                <rect key="frame" x="16" y="64" width="382" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="vwB-10-zR2">
+                                <rect key="frame" x="50" y="124" width="314" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNc-HS-5lA">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="40"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="startEditing:" destination="nAd-Vx-0io" eventType="touchUpInside" id="QjM-Uv-DGg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fm4-FT-LTi">
+                                        <rect key="frame" x="172" y="0.0" width="142" height="40"/>
+                                        <state key="normal" title="End"/>
+                                        <connections>
+                                            <action selector="endEditing:" destination="nAd-Vx-0io" eventType="touchUpInside" id="05A-8T-Hpc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yRq-pl-fbn"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="15h-G1-VUZ" firstAttribute="trailing" secondItem="6k4-MD-ikw" secondAttribute="trailing" constant="16" id="ap5-yl-c2c"/>
+                            <constraint firstItem="6k4-MD-ikw" firstAttribute="leading" secondItem="15h-G1-VUZ" secondAttribute="leading" constant="16" id="bUU-ww-5EK"/>
+                            <constraint firstItem="15h-G1-VUZ" firstAttribute="trailing" secondItem="vwB-10-zR2" secondAttribute="trailing" constant="50" id="gRm-hV-XlZ"/>
+                            <constraint firstItem="vwB-10-zR2" firstAttribute="leading" secondItem="15h-G1-VUZ" secondAttribute="leading" constant="50" id="gkh-b2-6OW"/>
+                            <constraint firstItem="vwB-10-zR2" firstAttribute="top" secondItem="6k4-MD-ikw" secondAttribute="bottom" constant="30" id="mSV-g6-8L9"/>
+                            <constraint firstItem="6k4-MD-ikw" firstAttribute="top" secondItem="15h-G1-VUZ" secondAttribute="top" constant="20" id="xoP-Pj-2VQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="15h-G1-VUZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputField" destination="6k4-MD-ikw" id="VvL-DT-oaC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N4D-km-5J5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4161" y="2775"/>
+        </scene>
+        <!--Keyboard Types-->
+        <scene sceneID="o02-Nb-PsW">
+            <objects>
+                <viewController title="Keyboard Types" id="AV3-6S-Rxw" customClass="KeyboardTypesViewController" customModule="ViewCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QsN-Be-3r3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ges-zG-Fb6">
+                                <rect key="frame" x="16" y="64" width="382" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-ov-ab7">
+                                <rect key="frame" x="16" y="134" width="382" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2VF-cY-4Uw"/>
+                                </constraints>
+                                <state key="normal" title="Change Keyboard Type"/>
+                                <connections>
+                                    <action selector="changeKeyboardType:" destination="AV3-6S-Rxw" eventType="touchUpInside" id="T1b-v5-ocB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ges-zG-Fb6" firstAttribute="leading" secondItem="gQt-gr-VHl" secondAttribute="leading" constant="16" id="JBf-ru-qWD"/>
+                            <constraint firstItem="gQt-gr-VHl" firstAttribute="trailing" secondItem="ges-zG-Fb6" secondAttribute="trailing" constant="16" id="MEb-dJ-ClR"/>
+                            <constraint firstItem="ahc-ov-ab7" firstAttribute="leading" secondItem="gQt-gr-VHl" secondAttribute="leading" constant="16" id="VQq-lu-GtQ"/>
+                            <constraint firstItem="ahc-ov-ab7" firstAttribute="top" secondItem="ges-zG-Fb6" secondAttribute="bottom" constant="40" id="bzi-lS-fSh"/>
+                            <constraint firstItem="gQt-gr-VHl" firstAttribute="trailing" secondItem="ahc-ov-ab7" secondAttribute="trailing" constant="16" id="kjd-ds-1hx"/>
+                            <constraint firstItem="ges-zG-Fb6" firstAttribute="top" secondItem="gQt-gr-VHl" secondAttribute="top" constant="20" id="yoP-zK-2TD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gQt-gr-VHl"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputField" destination="ges-zG-Fb6" id="72W-to-2UH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8kh-hu-OUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5122" y="2774"/>
+        </scene>
+        <!--Keyboard Appearance-->
+        <scene sceneID="5BF-4Y-RCo">
+            <objects>
+                <viewController title="Keyboard Appearance" id="nbm-Fo-6A8" customClass="keyboardAppearanceViewController" customModule="Keybord" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zhy-pZ-Y3D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uzB-CG-PhP">
+                                <rect key="frame" x="16" y="64" width="382" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SSB-Zq-F8v">
+                                <rect key="frame" x="16" y="134" width="382" height="29"/>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="Dark"/>
+                                    <segment title="Light"/>
+                                    <segment title="Alert"/>
+                                </segments>
+                                <connections>
+                                    <action selector="appearanceChanged:" destination="nbm-Fo-6A8" eventType="valueChanged" id="qbT-fL-Tlu"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SSB-Zq-F8v" firstAttribute="leading" secondItem="GBy-38-StM" secondAttribute="leading" constant="16" id="Evy-oU-dhn"/>
+                            <constraint firstItem="SSB-Zq-F8v" firstAttribute="top" secondItem="uzB-CG-PhP" secondAttribute="bottom" constant="40" id="ZcS-od-dtX"/>
+                            <constraint firstItem="GBy-38-StM" firstAttribute="trailing" secondItem="uzB-CG-PhP" secondAttribute="trailing" constant="16" id="nG1-hH-Czt"/>
+                            <constraint firstItem="uzB-CG-PhP" firstAttribute="top" secondItem="GBy-38-StM" secondAttribute="top" constant="20" id="neM-4h-wGB"/>
+                            <constraint firstItem="GBy-38-StM" firstAttribute="trailing" secondItem="SSB-Zq-F8v" secondAttribute="trailing" constant="16" id="szJ-1z-sJy"/>
+                            <constraint firstItem="uzB-CG-PhP" firstAttribute="leading" secondItem="GBy-38-StM" secondAttribute="leading" constant="16" id="tLm-M1-Pqp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GBy-38-StM"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputField" destination="uzB-CG-PhP" id="DcQ-fg-fn0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01B-bb-5eA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6059" y="2746"/>
+        </scene>
+        <!--Return Key-->
+        <scene sceneID="z96-B0-ymx">
+            <objects>
+                <viewController title="Return Key" id="TfJ-Kx-fpb" customClass="ReturnKeyViewController" customModule="ViewCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8aj-r4-q8T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hqm-4B-kLw">
+                                <rect key="frame" x="16" y="64" width="382" height="90"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bl6-51-M9S">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="TfJ-Kx-fpb" id="QhL-Gh-xfv"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nBm-fc-lVo">
+                                        <rect key="frame" x="0.0" y="60" width="382" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="google"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="TfJ-Kx-fpb" id="VF3-dd-zs6"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KfE-CZ-EOX" firstAttribute="trailing" secondItem="hqm-4B-kLw" secondAttribute="trailing" constant="16" id="JMT-Ox-LxP"/>
+                            <constraint firstItem="hqm-4B-kLw" firstAttribute="top" secondItem="KfE-CZ-EOX" secondAttribute="top" constant="20" id="Kc3-hX-0ZS"/>
+                            <constraint firstItem="hqm-4B-kLw" firstAttribute="leading" secondItem="KfE-CZ-EOX" secondAttribute="leading" constant="16" id="ucr-8g-fwG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KfE-CZ-EOX"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstInputField" destination="bl6-51-M9S" id="zSi-IY-uwv"/>
+                        <outlet property="secondInputField" destination="nBm-fc-lVo" id="VTw-Fs-dep"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LNI-rx-UND" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7058" y="2773"/>
+        </scene>
+        <!--Keyboard Notification-->
+        <scene sceneID="8TM-F3-FVK">
+            <objects>
+                <viewController title="Keyboard Notification" id="Qjn-Od-Ma2" customClass="KeyboardNotificationViewController" customModule="ViewCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="28M-qn-lbV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jLl-iu-fch">
+                                <rect key="frame" x="16" y="60" width="382" height="786"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W1K-6T-Vuy" firstAttribute="trailing" secondItem="jLl-iu-fch" secondAttribute="trailing" constant="16" id="17h-Mk-sus"/>
+                            <constraint firstItem="W1K-6T-Vuy" firstAttribute="bottom" secondItem="jLl-iu-fch" secondAttribute="bottom" constant="16" id="mo1-3E-COo"/>
+                            <constraint firstItem="jLl-iu-fch" firstAttribute="leading" secondItem="W1K-6T-Vuy" secondAttribute="leading" constant="16" id="wIK-rS-CD0"/>
+                            <constraint firstItem="jLl-iu-fch" firstAttribute="top" secondItem="W1K-6T-Vuy" secondAttribute="top" constant="16" id="wzx-aK-xBm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W1K-6T-Vuy"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="jLl-iu-fch" id="4ks-sN-hmS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BdW-jq-DO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7916" y="2773"/>
+        </scene>
+    </scenes>
+</document>
